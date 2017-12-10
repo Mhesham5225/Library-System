@@ -9,7 +9,7 @@ char street[30];
 char city[20];
 }ad;
 
-typedef struct{
+typedef struct{//Hi I am maram..............
 char fn[20];
 char ln[50];
 int ID;
