@@ -9,7 +9,7 @@ char street[30];
 char city[20];
 }ad;
 
-typedef struct{//Hi I am maram..............
+typedef struct{
 char fn[20];
 char ln[50];
 int ID;
@@ -75,7 +75,7 @@ FILE *f1;
 FILE *f2;
 //FILE *f3;
 f1 = fopen("members.txt","w+");
-f2 = fopen("books.txt","a+");
+f2 = fopen("books.txt","w+");
 //f3 = fopen("borrowed.txt","a+");
 
     Refresh(f2);
@@ -155,16 +155,16 @@ void Insert_Book(FILE *a)
    Book b1;
     printf("Enter title: ");
     fgets(b1.title,SIZE,stdin);
-    toc(b1.title);
+    strtok(b1.title);
     printf("Enter author: ");
     fgets(b1.author,SIZE,stdin);
-    toc(b1.author);
+    strtok(b1.author);
     printf("Enter publisher: ");
     fgets(b1.pub,SIZE,stdin);
-    toc(b1.pub);
+    strtok(b1.pub);
     printf("Enter ISBN: ");
     fgets(b1.ISBN,18,stdin);
-    toc(b1.ISBN);
+    strtok(b1.ISBN);
     printf("Enter number of copies: ");
     scanf("%d",&b1.ncp);
     printf("Enter number of current copies: ");
@@ -172,7 +172,7 @@ void Insert_Book(FILE *a)
     clearinput();
     printf("Enter book's category: ");
     fgets(b1.category,20,stdin);
-    toc(b1.category);
+    strtok(b1.category);
     b[countb] = b1;
     countb++;
 
