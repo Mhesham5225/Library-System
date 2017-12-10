@@ -1,7 +1,7 @@
 #ifndef PROG1_H_INCLUDED
 #define PROG1_H_INCLUDED
 
-typedef struct{
+typedef struct{//Hi I am Miral..
 int building;
 char street[30];
 char city[20];
