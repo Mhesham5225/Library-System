@@ -7,9 +7,4 @@ brrw Return()
 {
 
 }
-int Search_ID()
-{
 
-}
-void Remove_member()
-{
