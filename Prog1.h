@@ -1,6 +1,6 @@
 #ifndef PROG1_H_INCLUDED
 #define PROG1_H_INCLUDED
-
+//YARAB
 typedef struct{
 int building;
 char street[30];
@@ -57,11 +57,8 @@ void Refresh();
 char * toc(char * st);
 int clearinput();
 extern Book b[SIZE];
-extern int countb =0;
 extern User m[SIZE];
-extern int countm =0;
 extern brrw borrowed[SIZE];
-extern int countbr =0;
 extern int prb; //the present number of books int the file
 extern int prm;
 extern int prbr;
